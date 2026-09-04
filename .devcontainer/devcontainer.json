@@ -1,0 +1,19 @@
+{
+  "name": "Full-Stack Interview Environment",
+  "image": "mcr.microsoft.com/devcontainers/dotnet:8.0",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "forwardPorts": [5000, 5001, 3000, 5173],
+  "postCreateCommand": "dotnet restore && cd ClientApp && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-dotnettools.csdevkit",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}
