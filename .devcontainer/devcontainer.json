@@ -7,6 +7,24 @@
     }
   },
   "forwardPorts": [5000, 5001, 3000, 5173],
+  "portsAttributes": {
+    "3000": {
+      "label": "React App",
+      "visibility": "public"
+    },
+    "5173": {
+      "label": "React Vite App",
+      "visibility": "public"
+    },
+    "5000": {
+      "label": ".NET HTTP",
+      "visibility": "public"
+    },
+    "5001": {
+      "label": ".NET HTTPS",
+      "visibility": "public"
+    }
+  },
   "postCreateCommand": "dotnet restore && cd ClientApp && npm install",
   "customizations": {
     "vscode": {
